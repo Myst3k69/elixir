@@ -100,7 +100,7 @@ defmodule RideauWeb.CoreComponents do
   slot :inner_block
 
   def flash(assigns) do
-    assigns = assign_new(assigns, :id, fn -> "flash-#{assigns.kind}" end)
+    assigns = assign(assigns, :id, assigns.id || "flash-#{assigns.kind}")
 
     ~H"""
     <div

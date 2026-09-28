@@ -28,7 +28,7 @@ Ouvrir [http://localhost:4000](http://localhost:4000).
 1. Sur l'accueil, entrer en régie.
 2. Choisir **Aurel · Régie** (ou `aurel@quai-des-brumes.fr` / `rideau-rouge`).
 3. Ouvrir **Le Bal des Ombres**, puis le **pupitre**.
-4. Dans un autre onglet, le poste **Lumière** avec Camille (`camille@quai-des-brumes.fr` / `poursuite`) ou le poste **Son** avec Nour (`nour@quai-des-brumes.fr` / `casque`). On peut aussi ouvrir un poste sans changer de compte : la régie voit tous les postes.
+4. Dans un autre onglet, le poste **Lumière** avec Camille (`camille@quai-des-brumes.fr` / `poursuite`) ou le poste **Son** avec Nour (`nour@quai-des-brumes.fr` / `casque-son`). On peut aussi ouvrir un poste sans changer de compte : la régie voit tous les postes.
 5. Au pupitre : **Préparez**, puis **Top** (ou les touches `P` et `T`). Le poste concerné s'allume. La **feuille** de soirée prend l'heure.
 6. Revenir à la saison et **ouvrir un spectacle** : l'essai est plein. L'offre **Saison** (paiement simulé) lève la limite.
 

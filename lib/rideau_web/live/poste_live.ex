@@ -70,7 +70,8 @@ defmodule RideauWeb.PosteLive do
             </section>
           <% @courant && @courant.departement == @departement && @courant.statut == "prepare" -> %>
             <section class={"poste-plein poste-prepare dept-#{@departement}"}>
-              <p class="kicker">Votre cue · préparez</p>
+              <p class="poste-ordre">Préparez</p>
+              <p class="kicker">{Departement.label(@departement)} · cue {@courant.numero}</p>
               <p class="hero-numero">{@courant.numero}</p>
               <h1>{@courant.intitule}</h1>
               <p :if={@courant.note}>{@courant.note}</p>
@@ -78,7 +79,7 @@ defmodule RideauWeb.PosteLive do
             </section>
           <% @courant && @courant.departement == @departement -> %>
             <section class={"poste-plein dept-#{@departement}"}>
-              <p class="kicker">Votre cue · pas encore de préparez</p>
+              <p class="kicker">Votre cue · en attente du préparez</p>
               <p class="hero-numero">{@courant.numero}</p>
               <h1>{@courant.intitule}</h1>
               <p :if={@courant.note}>{@courant.note}</p>

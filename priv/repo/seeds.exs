@@ -33,7 +33,12 @@ else
           password: "poursuite",
           departement: "lumiere"
         },
-        %{nom: "Nour", email: "nour@quai-des-brumes.fr", password: "casque", departement: "son"}
+        %{
+          nom: "Nour",
+          email: "nour@quai-des-brumes.fr",
+          password: "casque-son",
+          departement: "son"
+        }
       ] do
     %User{}
     |> User.changeset(Map.merge(membre, %{role: "poste", compagnie_id: compagnie.id}))
@@ -190,7 +195,7 @@ else
   Démo RIDEAU prête.
   Régie   aurel@quai-des-brumes.fr   / rideau-rouge
   Lumière camille@quai-des-brumes.fr / poursuite
-  Son     nour@quai-des-brumes.fr    / casque
+  Son     nour@quai-des-brumes.fr    / casque-son
   Spectacle : Le Bal des Ombres (#{aurel.nom})
   """)
 end

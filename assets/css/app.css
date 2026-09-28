@@ -549,6 +549,16 @@ h2 {
   border: 1px solid var(--line);
 }
 .poste-prepare { background: #3a2504; border-color: var(--amber); }
+.poste-ordre {
+  font-family: var(--cond);
+  font-weight: 700;
+  font-size: clamp(4.2rem, 20vw, 7.5rem);
+  line-height: 0.8;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--amber);
+}
 .poste-entracte { background: #2a2112; }
 .poste-clos { background: #2a1014; }
 .poste-attente h1, .poste-plein h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); }
@@ -570,7 +580,7 @@ h2 {
 
 .flash-pile {
   position: fixed;
-  top: 1rem;
+  top: 5.25rem;
   right: 1rem;
   z-index: 30;
   display: grid;
@@ -613,6 +623,15 @@ h2 {
     grid-template-columns: 1fr;
   }
   .mast, .saison-entete, .conducteur-entete, .barre-scene, .colophon { flex-direction: column; align-items: flex-start; }
+  .barre-nav, .mast-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0.2rem;
+  }
+  .barre-scene { gap: 0.35rem; padding: 0.55rem 0.75rem 0.4rem; }
+  .wordmark { font-size: 1.55rem; }
   .horloge { text-align: left; }
   .hero-actions { flex-direction: column; }
   .bouton-top, .hero-actions .bouton { width: 100%; }

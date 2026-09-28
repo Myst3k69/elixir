@@ -11,7 +11,7 @@ defmodule RideauWeb.ConnexionLive do
       email: "camille@quai-des-brumes.fr",
       password: "poursuite"
     },
-    %{nom: "Nour", role: "Son", email: "nour@quai-des-brumes.fr", password: "casque"}
+    %{nom: "Nour", role: "Son", email: "nour@quai-des-brumes.fr", password: "casque-son"}
   ]
 
   def mount(_params, _session, socket) do
