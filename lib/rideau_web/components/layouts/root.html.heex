@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <meta
+      name="description"
+      content="RIDEAU est le pupitre de conduite du spectacle vivant. La régie appelle le top, le plateau le reçoit en direct."
+    />
+    <.live_title default="RIDEAU" suffix=" · RIDEAU" phx-no-format>{assigns[:page_title]}</.live_title>
+    <link rel="icon" href={~p"/images/favicon.svg"} type="image/svg+xml" />
+    <link phx-track-static rel="stylesheet" href={~p"/assets/js/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}>
+    </script>
+  </head>
+  <body>
+    <a class="saut" href="#ambiance">Aller au contenu</a>
+    {@inner_content}
+  </body>
+</html>
